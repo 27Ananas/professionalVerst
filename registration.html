@@ -113,30 +113,32 @@
             </div>
         </section>
 
-        <section class="join">
-            <h2 class="visually-hidden">registration</h2>
+        <div class="join">
             <form action="#">
                 <div class="container">
                     <fieldset>
-                        <legend>Your Name</legend>
+                        <legend class="join__title">Your Name</legend>
                         <label><input class="field" type="text" placeholder="First Name" required></label><br>
                         <label><input class="field" type="text" placeholder="Last Name" required></label><br>
-                        <input class="radio-input" type="radio" id="Male" name="contact" value="male">
-                        <label for="Male">Male</label>
-                        <input class="radio-input" type="radio" id="Female" name="contact" value="female">
-                        <label for="Female">Female</label>
-                        <legend>Login details</legend>
+                        <div class="join__mark-wpr">
+                            <input class="radio-input" type="radio" id="Male" name="contact" value="male">
+                            <label class="join__mark" for="Male">Male</label>
+                            <input class="radio-input" type="radio" id="Female" name="contact" value="female">
+                            <label class="join__mark" for="Female">Female</label>
+                        </div>
+                        <legend class="join__title">Login details</legend>
                         <label><input class="field" type="email" placeholder="Email" required></label><br>
                         <label><input class="field" type="password" placeholder="Password" required></label>
-                        <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and
+                        <p class="join__text">Please use 8 or more characters, with at least 1 number and a mixture of
+                            uppercase and
                             lowercase
                             letters
                         </p>
-                        <button class="" type="submit">join now</button>
+                        <button class="join__button" type="submit">join now</button>
                     </fieldset>
                 </div>
             </form>
-        </section>
+        </div>
 
         <section class="loyalty">
             <div class="container">
