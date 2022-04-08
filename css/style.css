@@ -218,6 +218,18 @@ body {
     border: 1px solid var(--dark-pink);
     font-size: 16px;
     line-height: 19px;
+    background-color: white;
+}
+
+.catalog__all:hover
+.catalog__all:focus {
+    cursor: pointer;
+    outline: none;
+}
+
+.catalog__all:active {
+    background: var(--dark-pink);
+    color: white;
 }
 
 .features {
@@ -369,4 +381,44 @@ body {
 
 .social__item {
     margin: 24px 0 24px 0;
+}
+
+.social__socials-icon:hover
+.social__socials-icon:focus {
+    /* cursor: pointer;
+    outline: none; */
+}
+
+.social__socials-icon:active {
+    /* background: var(--dark-pink); */
+}
+
+/* Registration */
+
+.registration {
+    background-color: var(--light-pink);
+}
+
+.registration__title {
+    padding: 60px 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: var(--dark-pink);
+}
+
+.join {
+    margin-top: 64px;
+}
+
+.field {
+    width: 360px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.loyalty {
+    display: flex;
+    justify-content: flex-end;
 }
