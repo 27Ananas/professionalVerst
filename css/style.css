@@ -384,14 +384,17 @@ body {
     margin: 24px 0 24px 0;
 }
 
-.social__socials-icon:hover
-.social__socials-icon:focus {
-    /* cursor: pointer;
-    outline: none; */
+.social__socials-icon {
+    fill: white;
 }
 
-.social__socials-icon:active {
-    /* background: var(--dark-pink); */
+.social__socials-icon:hover,
+.social__socials-icon:focus {
+    fill: var(--dark-pink);
+}
+
+.social__socials-icon:hover .social__icon {
+    fill: white;
 }
 
 /* Registration */
@@ -409,8 +412,15 @@ body {
     color: var(--dark-pink);
 }
 
+.join-loyalty {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 96px;
+}
+
 .join {
     margin-top: 64px;
+    margin-right: 128px;
 }
 
 .join__title {
@@ -456,10 +466,21 @@ body {
     width: 360px;
     height: 45px;
     margin-bottom: 20px;
+    padding: 0 0 0 17px;
 }
+
+input[placeholder]          {text-overflow:ellipsis;}
+input::-webkit-placeholder  {text-overflow:ellipsis;} 
+input:-moz-placeholder      {text-overflow:ellipsis;} 
+input:-ms-input-placeholder {text-overflow:ellipsis;}  
+
+.field:focus::-webkit-input-placeholder {color: transparent}
+.field:focus:-moz-placeholder           {color: transparent}
+.field:focus:-ms-input-placeholder      {color: transparent}
 
 .loyalty {
     margin-top: 64px;
+    width: 652px;
 }
 
 .loyalty__title {
