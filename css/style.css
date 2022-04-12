@@ -159,6 +159,7 @@ body {
     text-align: center;
     font-size: 30px;
     line-height: 36px;
+    margin-bottom: 6px;
 }
 
 .catalog__text {
@@ -191,6 +192,7 @@ body {
     font-size: 13px;
     line-height: 16px;
     padding: 25px 0 13px 18px;
+    color: #000000;
 }
 
 .catalog__desc {
@@ -204,6 +206,52 @@ body {
 .catalog__text-maney {
     color: var(--dark-pink);
     padding: 18px 0 20px 18px;
+}
+
+.catalog__link {
+    text-decoration: none;
+}
+
+.catalog__item-wrp {
+    position: relative;
+}
+
+.catalog__overlay {
+    width: 100%;
+    min-height: 100%;
+    background: rgba(58, 56, 56, 0.86);;
+    opacity: 86%;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.catalog__button {
+    position: absolute;
+    background-image: url(../img/basket-card.png);
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    height: 43px; 
+    width: 138px;
+    color: #ffffff; 
+    border: 1px solid #FFFFFF; 
+    background-color: rgba(58, 56, 56, 0.86);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.catalog__item:hover .catalog__overlay,
+.catalog__item:hover .catalog__button {
+    display: block;
+}
+
+.catalog__button:active {
+    background: none;
+    opacity: 86%;
 }
 
 .catalog__all {
@@ -221,16 +269,18 @@ body {
     background-color: white;
 }
 
-.catalog__all:hover
+.catalog__all:hover,
 .catalog__all:focus {
     cursor: pointer;
     outline: none;
-}
-
-.catalog__all:active {
     background: var(--dark-pink);
     color: white;
 }
+
+/* .catalog__all:active {
+    background: var(--dark-pink);
+    color: white;
+} */
 
 .features {
     background-color: var(--black);
@@ -327,9 +377,13 @@ body {
     margin-bottom: 32px;
 }
 
+.subscribe__email-button {
+    display: flex;
+}
+
 .subscribe__email {
     width: 256px;
-    height: 49px;
+    height: 47px;
     -webkit-border-top-left-radius: 20px;
     -webkit-border-bottom-left-radius: 20px;
     -moz-border-radius-topleft: 20px;
@@ -343,7 +397,6 @@ body {
     line-height: 17px;
     align-items: center;
     color: var(--black);
-    margin-right: -5px;
 }
 
 .subscribe__button {
