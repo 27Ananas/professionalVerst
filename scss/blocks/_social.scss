@@ -1,0 +1,33 @@
+.social {
+    background-color: $black;
+}
+
+.social__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $white;
+    margin: 6px 0;
+}
+
+.social__item {
+    margin: 24px 0 24px 0;
+}
+
+.social__socials-icon {
+    fill: white;
+}
+
+.social__socials-icon:hover,
+.social__socials-icon:focus {
+    fill: $dark-pink;
+}
+
+.social__socials-icon:hover .social__icon {
+    fill: white;
+}

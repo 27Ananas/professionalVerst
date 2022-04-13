@@ -1,0 +1,93 @@
+.subscribe {
+    background-size: cover;
+    background-image: url(../img/coast-img.jpg);
+    background-repeat: no-repeat;
+    height: 448px;
+}
+
+.subscribe__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subscribe__avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.subscribe__item-avatar {
+    padding: 97px 0 0 0;
+    width: 360px;
+    height: 225px;
+}
+
+.subscribe__item {
+    padding: 150px 0 0 0;
+}
+
+.subscribe__comment-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.subscribe__title {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.subscribe__text {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.subscribe__email-button {
+    display: flex;
+}
+
+.subscribe__email {
+    width: 256px;
+    height: 47px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    background: $subscibe-bcg;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    color: $black;
+}
+
+.subscribe__button {
+    width: 100px;
+    height: 49px;
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomright: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    background: $dark-pink;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $white;
+}
