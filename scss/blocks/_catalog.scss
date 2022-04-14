@@ -1,0 +1,130 @@
+.catalog {
+    padding-bottom: 95px;
+}
+
+.catalog__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 6px;
+}
+
+.catalog__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    padding-bottom: 48px;
+}
+
+.catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 360px;
+    margin: 0 0 30px 0;
+    background-color: $catalog-text-bcg-color;
+}
+
+.catalog__subtitle {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 25px 0 13px 18px;
+    color: #000000;
+}
+
+.catalog__desc {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $catalog-text-color;
+    padding: 0 28px 0 18px;
+}
+
+.catalog__text-maney {
+    color: $dark-pink;
+    padding: 18px 0 20px 18px;
+}
+
+.catalog__link {
+    text-decoration: none;
+}
+
+.catalog__item-wrp {
+    position: relative;
+}
+
+.catalog__overlay {
+    width: 100%;
+    min-height: 100%;
+    background: rgba(58, 56, 56, 0.86);;
+    opacity: 86%;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.catalog__button {
+    position: absolute;
+    background-image: url(../img/basket-card.png);
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    height: 43px; 
+    width: 138px;
+    color: #ffffff; 
+    border: 1px solid #FFFFFF; 
+    background-color: rgba(58, 56, 56, 0.86);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.catalog__item:hover .catalog__overlay,
+.catalog__item:hover .catalog__button {
+    display: block;
+}
+
+.catalog__button:active {
+    background: none;
+    opacity: 86%;
+}
+
+.catalog__all {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 211px;
+    margin: 0 auto;
+    margin-top: 18px;
+    padding: 15px 0;
+    color: $dark-pink;
+    border: 1px solid $dark-pink;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: white;
+}
+
+.catalog__all:hover,
+.catalog__all:focus {
+    cursor: pointer;
+    outline: none;
+    background: $dark-pink;
+    color: white;
+}
+
+/* .catalog__all:active {
+    background: $dark-pink;
+    color: white;
+} */
