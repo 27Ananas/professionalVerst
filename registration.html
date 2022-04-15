@@ -17,15 +17,89 @@
 <body>
     <header class="header">
         <div class="container header__wrp">
-            <div>
-                <img class="header__logo" src="./img/logo-img.png" alt="icon">
-                <img class="header__loupe" src="./img/icon/loupe.svg" alt="loupe">
+            <div class="header__loupe">
+                <a href="./index.html">
+                    <img class="header__logo" src="./img/logo-img.png" alt="icon">
+                </a>
+                <form class="header__loupe-form">
+                    <input class="header__loupe-input" type="text" placeholder="Search">
+                    <button class="header__loupe-button" type="submit"></button>
+                </form>
             </div>
             <ul class="header__list">
                 <li class="header__item">
-                    <button class="header__button">
-                        <img src="./img/icon/burger.svg" alt="burger-ico">
+                    <button class="header__burger-button" type="button">
+                        <svg class="header__burger-icon" width="32" height="23" viewBox="0 0 32 23"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
+                        </svg>
                     </button>
+                    <nav class="header__nav">
+                        <a href="#"><img class="header__nav-cross" src="./img/cross-img.png" alt="cross"></a>
+                        <h2 class="header__title">menu</h2>
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item new-sub-item">
+                                <h3 class="new-sub-item__title">man</h3>
+                                <ul class="new-sub-item__list">
+                                    <li class="new-sub-item__item">
+                                        <a class="new-sub-item__item" href="#">Accessories</a>
+                                    </li>
+                                    <li class="new-sub-item__item">
+                                        <a class="new-sub-item__item" href="#">Bags</a>
+                                    </li>
+                                    <li class="new-sub-item__item">
+                                        <a class="new-sub-item__item" href="#">Denim</a>
+                                    </li>
+                                    <li class="new-sub-item__item">
+                                        <a class="new-sub-item__item" href="#">T-Shirts</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item">
+                                <h3 class="new-sub-item__title">woman</h3>
+                                <ul>
+                                    <li class="new-sub-item__item">
+                                        <a class="new-sub-item__item" href="#">Accessories</a>
+                                    </li>
+                                    <li class="new-sub-item__item">
+                                        <a class="new-sub-item__item" href="#">Jackets & Coats</a>
+                                    </li>
+                                    <li class="new-sub-item__item">
+                                        <a class="new-sub-item__item" href="#">Polos</a>
+                                    </li>
+                                    <li class="new-sub-item__item">
+                                        <a class="new-sub-item__item" href="#">T-Shirts</a>
+                                    </li>
+                                    <li class="new-sub-item__item">
+                                        <a class="new-sub-item__item" href="#">Shirts</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item">
+                                <h3 class="new-sub-item__title">kids</h3>
+                                <ul>
+                                    <li class="new-sub-item__item">
+                                        <a class="new-sub-item__item" href="#">Accessories</a>
+                                    </li>
+                                    <li class="new-sub-item__item">
+                                        <a class="new-sub-item__item" href="#">Jackets & Coats</a>
+                                    </li>
+                                    <li class="new-sub-item__item">
+                                        <a class="new-sub-item__item" href="#">Polos</a>
+                                    </li>
+                                    <li class="new-sub-item__item">
+                                        <a class="new-sub-item__item" href="#">T-Shirts</a>
+                                    </li>
+                                    <li class="new-sub-item__item">
+                                        <a class="new-sub-item__item" href="#">Shirts</a>
+                                    </li>
+                                    <li class="new-sub-item__item">
+                                        <a class="new-sub-item__item" href="#">Bags</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                 </li>
                 <li class="header__item">
                     <a href="./registration.html" class="header__link">
@@ -33,76 +107,11 @@
                     </a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">
+                    <a href="./cart.html" class="header__link">
                         <img src="./img/icon/basket.svg" alt="basket-ico">
                     </a>
                 </li>
             </ul>
-            <nav class="header__nav">
-                <h2 class="header__title">menu</h2>
-                <ul class="header__nav-list">
-                    <li class="header__nav-item new-sub-item">
-                        <a class="new-sub-item__title" href="#">man</a>
-                        <ul class="new-sub-item__list">
-                            <li class="nav-sub-item__item">
-                                <a href="#">Accessories</a>
-                            </li>
-                            <li class="nav-sub-item__item">
-                                <a href="#">Bags</a>
-                            </li>
-                            <li class="nav-sub-item__item">
-                                <a href="#">Denim</a>
-                            </li>
-                            <li class="nav-sub-item__item">
-                                <a href="#">T-Shirts</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#">woman</a>
-                        <ul>
-                            <li>
-                                <a href="#">Accessories</a>
-                            </li>
-                            <li>
-                                <a href="#">Jackets & Coats</a>
-                            </li>
-                            <li>
-                                <a href="#">Polos</a>
-                            </li>
-                            <li>
-                                <a href="#">T-Shirts</a>
-                            </li>
-                            <li>
-                                <a href="#">Shirts</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#">kids</a>
-                        <ul>
-                            <li>
-                                <a href="#">Accessories</a>
-                            </li>
-                            <li>
-                                <a href="#">Jackets & Coats</a>
-                            </li>
-                            <li>
-                                <a href="#">Polos</a>
-                            </li>
-                            <li>
-                                <a href="#">T-Shirts</a>
-                            </li>
-                            <li>
-                                <a href="#">Shirts</a>
-                            </li>
-                            <li>
-                                <a href="#">Bags</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </header>
 
@@ -142,7 +151,6 @@
                     </fieldset>
                 </form>
             </div>
-
             <div class="loyalty">
                 <h2 class="loyalty__title">loyalty has its perks</h2>
                 <p class="loyalty__text">Get in on the loyalty program where you can earn points and unlock serious
@@ -160,7 +168,6 @@
             </div>
         </section>
 
-
     </main>
 
     <footer>
@@ -177,7 +184,7 @@
                     <li class="subscribe__item">
                         <h3 class="subscribe__title">subscribe</h3>
                         <p class="subscribe__text">for our newletter and promotion</p>
-                        <form action="#">
+                        <form class="subscribe__email-button" action="#">
                             <label for="email" class="visually-hidden">email</label>
                             <input class="subscribe__email" type="email" id="email" placeholder="Enter Your Email">
                             <button class="subscribe__button" type="submit">Subscribe</button>
