@@ -33,7 +33,7 @@
     font-weight: 300;
     font-size: 13px;
     line-height: 16px;
-    color: #B1B1B1;
+    color: $text-input-color;
     width: 359px;
     margin-bottom: 39px;
 }
@@ -66,6 +66,9 @@
     height: 45px;
     margin-bottom: 20px;
     padding: 0 0 0 17px;
+    border: none;
+    outline: 1px solid $text-input-color;
+    color: $text-input-color;
 }
 
 input[placeholder]          {text-overflow:ellipsis;}

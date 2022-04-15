@@ -66,7 +66,7 @@
 .catalog__overlay {
     width: 100%;
     min-height: 100%;
-    background: rgba(58, 56, 56, 0.86);;
+    background: $sales-bcg-color;
     opacity: 86%;
     position: absolute;
     top: 0;
@@ -83,9 +83,9 @@
     display: none;
     height: 43px; 
     width: 138px;
-    color: #ffffff; 
-    border: 1px solid #FFFFFF; 
-    background-color: rgba(58, 56, 56, 0.86);
+    color: white; 
+    border: 1px solid white; 
+    background-color: $sales-bcg-color;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
